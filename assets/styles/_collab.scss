@@ -1,0 +1,188 @@
+@import "../../assets/styles/vars.scss";
+
+.hero__container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin: 20vh 0 7vh 0;
+
+    .hero__img {
+        width: 70%;
+    }
+}
+
+.studios__container,
+.studios-search__container {
+    width: 100%;
+    font-family: 'Gugi', sans-serif;
+    color: $main-color;
+
+    @include f-column;
+    justify-content: center;
+    margin: 0 auto;
+
+    .studios__heading,
+    .studios-search__heading {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    hr {
+        margin: 17px 40px 0 40px;
+        height: 6px;
+        background: linear-gradient(55deg, #475F66, #ddd, #3a2d2d);
+        border: none;
+    }
+
+    .database__container,
+    .database__list,
+    .gif__search,
+    .search__container {
+        margin: 40px;
+    }
+
+    .search__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gif__search {
+        margin: auto;
+
+        h1 {
+            margin: 5vh 0;
+        }
+
+        input {
+            background: linear-gradient(114.23deg, #a59a9a 14.64%, rgba(118, 114, 114, 0.7) 47.07%, #475F66 80.65%);
+            padding: 10px;
+            border-radius: 10px;
+            opacity: 0.5;
+
+            width: 25vw;
+        }
+
+        #btnSubmit {
+            width: 8em;
+            height: 4em;
+            color: $main-color;
+            border-radius: 10px;
+            letter-spacing: 2px;
+            border: 1px solid rgba(86, 82, 82, 0.537);
+            background: linear-gradient(114.23deg, #1c1c1c 14.64%, rgba(30, 53, 101, 0.7) 47.07%, #412d48 80.65%);
+
+            &:hover {
+                cursor: pointer;
+                background: linear-gradient(114.23deg, #373261 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
+            }
+        }
+    }
+
+    .database__list {
+        #tblGrid {
+            margin: auto;
+            border: 1px solid $main-color;
+            background: linear-gradient(114.23deg, #3a2d2d 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #475F66 80.65%);
+
+            tbody {
+                display: block;
+                margin: 10px 5px 10px 5px;
+            }
+
+            tr {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .body__row>td {
+                border: 1px solid $main-color;
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .database__container {
+        display: grid;
+        gap: 3%;
+        grid-template-columns: 37% 60%;
+
+        .database__input {
+            .db-table {
+                td {
+                    padding-right: 10px;
+                }
+
+                input,
+                textarea {
+                    background: linear-gradient(114.23deg, #a59a9a 14.64%, rgba(118, 114, 114, 0.7) 47.07%, #475F66 80.65%);
+                    padding: 10px;
+                    border-radius: 10px;
+                    opacity: 0.5;
+
+                    width: 25vw;
+                }
+
+                input {
+                    height: 40px;
+                }
+
+                textarea {
+                    height: 80px;
+                    margin-bottom: 20px;
+                }
+
+                .button__send {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                #btnInsert,
+                #btnDelete {
+                    width: 5em;
+                    height: 2em;
+                    color: $main-color;
+                    border-radius: 10px;
+                    letter-spacing: 2px;
+                    border: 1px solid rgba(86, 82, 82, 0.537);
+                    background: linear-gradient(114.23deg, #1c1c1c 14.64%, rgba(30, 53, 101, 0.7) 47.07%, #412d48 80.65%);
+
+                    &:hover {
+                        cursor: pointer;
+                        background: linear-gradient(114.23deg, #373261 14.64%, rgba(0, 0, 0, 0.7) 47.07%, #334449 80.65%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search__container {
+    margin: 40px;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+}
+
+.pics__container img {
+    width: 80%;
+}
+
+table {
+
+    tr,
+    td {
+        color: white;
+        font-size: 21px;
+        font-weight: 100;
+    }
+}
+
+.footer__studios {
+    padding: 28px 10px 0px 10px;
+    min-height: 80px;
+    background-color: #1a1515;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Inter&family=Merriweather&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../assets/styles/header.css" />
+    <link rel="stylesheet" href="../assets/styles/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Argumented Reality</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__body">
+                <a href="../index.html" class="header__logo">
+                    <img class="logo" src="../assets/images/header/vr.jpg" alt="" /></a>
+                <div class="header__burger"><span class="header__burger_Span"></span></div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a class="header__link" href="../htmls/main.html">Общая информация</a></li>
+                        <li><a class="header__link" href="../htmls/collab.html">Сотрудничество</a></li>
+                        <li><a class="header__link" href="#">Возникновение и развитие</a></li>
+                        <li><a class="header__link" href="#">Возможное развитие</a></li>
+                        <li><a class="header__link" href="#">Области применения</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="slideshow">
+            <div class="slideshow__container">
+                <div class="slideshow__slides">
+                    <a href="//habr.com/ru/articles/419437/"><img src="../assets/images/slides/slide1.jpg" alt=""
+                            class="slideshow__img"></a>
+                </div>
+                <div class="slideshow__slides">
+                    <a href="https://dynamics.microsoft.com/ru-ru/mixed-reality/guides/what-is-augmented-reality-ar/"><img
+                            src="../assets/images/slides/slide2.jpg" alt="" class="slideshow__img"></a>
+                </div>
+                <div class="slideshow__slides">
+                    <a href="https://ru.wikipedia.org/wiki/Дополненная_реальность"><img
+                            src="../assets/images/slides/slide3.jpg" alt="" class="slideshow__img"></a>
+                </div>
+                <a class="arrow prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="arrow next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="slideshow__dots">
+                <span class="slideshow__dot" onclick="currentSlide(1)"></span>
+                <span class="slideshow__dot" onclick="currentSlide(2)"></span>
+                <span class="slideshow__dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="movies">
+            <h2 class="movie__title"><a href="../htmls/trading.html">Торговля</a></h2>
+            <div class="trade">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uIsEZiP_Pwc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <p>Сотрудники могут использовать AR-технологии для адаптации и обучения. Клиентам будут полезны
+                    возможности дополненной реальности, чтобы протестировать продукты перед покупкой или научиться их
+                    использовать в нужной среде.</p>
+            </div>
+
+            <h2 class="movie__title"><a href="../htmls/trading.html">Образование</a></h2>
+            <div class="education">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iJ_gb6MuLhU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <p>Применение технологий дополнительной реальности в образовании набирает обороты и является
+                    перспективной практикой, обладающей разного рода преимуществами и способной улучшить эффективность
+                    преподавания различных дисциплин, в том числе иностранных языков. Чтобы освоить язык, требуется
+                    проникнуть в культуру народа, которому этот язык принадлежит, приобрести иноязычные социокультурные
+                    компетенции. AR- является одной из наиболее перспективных технологий, позволяющих решить этот
+                    вопрос.</p>
+            </div>
+
+            <h2 class="movie__title"><a href="../htmls/trading.html">Здравоохранение</a></h2>
+            <div class="health">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/h4M6BTYRlKQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <p>В современных лапароскопических операциях изображение на эндоскопе дополняется изображением,
+                    полученным во время интраоперативной ангиографии. Это позволяет хирургу точно знать, где находится
+                    опухоль внутри органа, и таким образом минимизировать потери здоровой ткани органа пациента во время
+                    операции по удалению опухоли.</p>
+            </div>
+
+            <h2 class="movie__title"><a href="../htmls/trading.html">Вооруженные силы</a></h2>
+            <div class="military">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x8p19j8C6VI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <p>В современных боевых самолетах и вертолетах часто используется индикация на лобовом стекле или на
+                    шлеме пилота. Она позволяет пилоту получать наиболее важную информацию прямо на фоне наблюдаемой им
+                    обстановки, не отвлекаясь на основную приборную панель.</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/movie.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+@import "../../assets/styles/vars.scss";
+
+body {
+    background: linear-gradient(114.23deg, #1b1b1b 15%, rgba(84, 60, 95, 0.7) 15%, #1b1b1b 15%);
+}
+
+.container {
+    padding-bottom: 50px;
+}
+
+.slideshow__container {
+    @include f-column;
+    justify-content: center;
+    max-width: 100%;
+    margin: 40px;
+    position: relative;
+    top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 1.5em;
+    line-height: 52px;
+    color: $main-color;
+}
+
+.slideshow__slides {
+    width: 70%;
+    margin: auto;
+}
+
+.slideshow__img {
+    width: 100%;
+    height: 75vh;
+
+    &:hover {
+        scale: 1.15;
+        transition: 0.5s;
+    }
+}
+
+.slideshow__text {
+    position: absolute;
+    padding: 8px 12px;
+    margin-top: -80px;
+    left: 5%;
+}
+
+.slideshow__dots {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.slideshow__dot {
+    cursor: pointer;
+    top: 848px;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #7D7373;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active2,
+.slideshow__dot:hover {
+    background-color: #98cada;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 26px;
+    margin-top: -30px;
+    color: #7D7373;
+    font-size: 2.5em;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: -1%;
+}
+
+.prev {
+    left: -1%;
+}
+
+.movies {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $main-color;
+
+    .trade,
+    .education,
+    .health,
+    .military {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 5vh 5vw;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+
+        border: 3px dotted rgba(132, 77, 142, 0.5);
+        border-radius: 15px;
+        padding: 20px;
+    }
+}
+
+.movie {
+    width: 100%;
+
+    &__title {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 52px;
+        margin: 0 40px;
+        background: linear-gradient(114.23deg, #1c1c1c 14.64%, rgba(30, 53, 101, 0.7) 47.07%, #412d48 80.65%);
+        ;
+        border-radius: 15px;
+    }
+
+    &__img {
+        height: 300px;
+        position: relative;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    &__img:hover {
+        transform: translateY(-10px);
+        box-shadow: 8px 10px 5px 2px #b2c0c0;
+    }
+
+    &__year,
+    &__rating {
+        font-size: 1em;
+        line-height: 26px;
+        margin: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        background-color:
+            rgba(156, 201, 215, 0.67);
+        color: #594444;
+    }
+
+    &__link:hover {
+        background-color: #3a3a3a;
+    }
+
+    &__description {
+        margin: 20px 50px;
+    }
+}
+
+.movie2 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 110;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.movie2 div {
+    font-family: 'Comfortaa';
+    font-size: 1.1em;
+    font-style: normal;
+    overflow: auto;
+    background-color: #475F66;
+    border-radius: 30px;
+    width: 60%;
+    height: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.movie2 .movie__name {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .slideshow__container {
+        top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .slideshow__dots {
+        margin-top: 0;
+    }
+
+    .movie2 {
+        font-size: 1.2em;
+    }
+
+    .movie2 div {
+        width: 80%;
+        height: 90%;
+    }
+
+    .movie__description {
+        margin: 20px 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $main-color;
+}

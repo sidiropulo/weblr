@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles/app.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+
+    <title>LogIn</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form name="form1" id="login__form" method="post" action="https://httpbin.org/post">
+            <div class="login-form__container">
+                <div class="login-form__wrapper">
+
+                    <div class="login-form__title">
+                        <figure class="login-form__picture">
+
+                            <figure class="login-form__close-button">
+                                <img src="assets/icons/close-cross.png" alt="close button" class="js-close-button" />
+                            </figure>
+
+                            <img class="logo-img" src="assets/images/header/logoalt.png" alt="logo" />
+                            <figcaption class="logo-img__text">
+                                Argumented Reality AR
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="login-form validate-form">
+
+                        <div class="social-nets facebook-connection">
+                            <img src="assets/icons/pngwing.com.png" alt="github" class="social-img" />
+                            <span class="social-nets__text">continue with GitHub</span>
+                        </div>
+
+                        <div class="social-nets google-connection">
+                            <img src="assets/icons/google.png" alt="google" class="social-img" />
+                            <span class="social-nets__text">continue with google</span>
+                        </div>
+
+                        <hr class="above-input line">
+
+                        <div class="wrap-input validate-input first" data-validate="Enter email">
+                            <figure class="email-input__icon">
+                                <img src="assets/icons/mail.png" alt="letter icon" class="mail-letter" />
+                            </figure>
+                            <input class="input" id="email__input" type="email" name="email" placeholder="Your email"
+                                required>
+                        </div>
+
+                        <div class="wrap-input validate-input second" data-validate="Enter password">
+                            <figure class="password-input__icon">
+                                <img src="assets/icons/pass-lock.png" alt="pass lock" class="pass-lock" />
+                            </figure>
+                            <input class="input" id="password__input" type="password" minlength=5 name="password"
+                                placeholder="Password" required>
+                            <figure class="show-password-input__icon">
+                                <img src="assets/icons/show-pass.png" alt="show password" class="show-pass" />
+                            </figure>
+                        </div>
+
+                        <span class="under-wrap">
+                            <span class="help-text">Need help?</span>
+                        </span>
+
+                        <div class="container-login-form__btn">
+                            <button class="login-form__btn" type="submit" onclick="login()">login</button>
+                        </div>
+
+                        <span class="under-button">
+                            <span class="help-text no-account">Don't have an account?</span>
+                        </span>
+
+                        <div id="errorMsg" class="errors__info"></div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+        function login() {
+            // Получить значения введенного логина и пароля
+            var email = document.getElementById("email__input").value;
+            var password = document.getElementById("password__input").value;
+
+            // Проверить логин и пароль
+            if (email === "xetag1313@mail.ru" && password === "1313") {
+                // Перенаправить на страницу "main.html" при успешной аутентификации
+                window.location.href = "htmls\\main.html";
+            } else {
+                // Показать сообщение об ошибке
+                var errorMsg = document.getElementById("errorMsg");
+                errorMsg.innerHTML = "Invalid email or password.";
+            }
+        }
+    </script>
+</body>
+
+</html>

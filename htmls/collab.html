@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Gugi' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Inter&family=Merriweather&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../assets/styles/header.css" />
+    <link rel="stylesheet" href="../assets/styles/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Collaboration</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__body">
+                <a href="../index.html" class="header__logo">
+                    <img class="logo" src="../assets/images/header/vr.jpg" alt="" /></a>
+                <div class="header__burger"><span class="header__burger_Span"></span></div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a class="header__link" href="../htmls/main.html">Общая информация</a></li>
+                        <li><a class="header__link" href="../htmls/collab.html">Сотрудничество</a></li>
+                        <li><a class="header__link" href="#">Возникновение и развитие</a></li>
+                        <li><a class="header__link" href="#">Возможное развитие</a></li>
+                        <li><a class="header__link" href="#">Области применения</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero__container">
+            <img class="hero__img" src="https://mgppu.ru/files/galleries/photos/fcdb49e9da7b1ee6b62a9adb2f00b327.jpg
+                " alt="stat__img">
+        </div>
+
+        <div class="movies">
+            <h2 class="movie__title">Сотрудичество</h2>
+            <div class="movies__popular">
+            </div>
+        </div>
+
+        <div class="studios__container">
+            <h1 class="studios__heading">Inverse Connection</h1>
+            <hr>
+
+            <section class="database__container">
+                <div class="database__input">
+                    <p id="hh"></p>
+                    <form id="frm1">
+                        <table class="db-table">
+                            <tr>
+                                <td>Name: </td>
+                                <td><input class="db__input-field" type="text" id="tbName" /></td>
+                            </tr>
+                            <tr>
+                                <td>Phone: </td>
+                                <td><input class="db__input-field" type="text" id="tbPhone" /></td>
+                            </tr>
+                            <tr>
+                                <td>Email: </td>
+                                <td><input class="db__input-field" type="text" id="tbEmail" /></td>
+                            </tr>
+                            <tr>
+                                <td>Message: </td>
+                                <td>
+                                    <textarea class="db__input-field" type="text" id="tbMessage"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><button id="btnInsert">Send</button></td>
+                            </tr>
+                        </table>
+                    </form>
+
+                </div>
+
+                <div class="collab__text">
+                    <a href="https://mixar.biz/partners">Компания дополненной реальности родилась в 2017 году, когда
+                        группа техногиков объединилась для воплощения безумной идеи — создания первых российских очков
+                        дополненной реальности. Для привлечения внимания к проекту команда решила продемонстрировать
+                        готовый прототип на форуме SPIEF'18, а это значит, что закончить работу нужно за год.<br>
+
+                        Работа над проектом кипела, команда уставала, поэтому чтобы избежать выгорания было решено
+                        участвовать во всех доступных профессиональных конкурсах. Это решение стало поворотным. AR
+                        компания получила признание профессиональной тусовки, заработал победы и получил первых
+                        федеральных клиентов.<br><br>
+
+                        Тогда, весной 2018 года, когда лидеры команды в Санкт-Петербурге презентовали первые в России
+                        очки дополненной реальности, в штаб-квартире в Нижнем Новгороде остальная часть команды уже
+                        трудилась над четырьмя коммерческими проектами для федеральных клиентов.<br>
+
+                        Теперь, когда AR-очки уже лежат на почетном месте в офисе, а в штате компании собрались инженеры
+                        по компьютерному зрению, дополненной реальности, геймдизайну и маркетингу команда
+                        сконцентрировалась над новым амбициозным проектом - первой российской WebAR-платформе.</a>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="database__list">
+                <table id="tblGrid" cellspacing="10px">
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            Phone
+                        </td>
+                        <td>
+                            Email
+                        </td>
+                        <td>
+                            Message
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <hr>
+
+            <section class="gif__search">
+                <h1>Type a gif to find</h1>
+                <div>
+                    Search:
+                    <input type="text" id="gif__search" />
+                    <button id="btnSubmit" onclick="onSearch();">Find it for me!</button>
+                </div>
+            </section>
+
+            <div class="search__container"></div>
+
+        </div>
+    </div>
+
+    <script src="../js/collabDB.js"></script>
+    <script src="../js/movie.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+
+</html>
